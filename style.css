@@ -28,7 +28,7 @@ body{
   font-size:22px;
 }
 .slider{
-  -webkit-appearance: none;
+  appearance: none;
   width:100%;
   border-radius:5px;
   background: #dfdfdf;
@@ -37,15 +37,15 @@ body{
   margin-top: 8px;
 }
 .button-cta{
-  height:40px;
+  height:60px;
   background-color: #3eb72b;
   border:0;
-  border-radius:4px;
+  border-radius:8px;
   cursor: pointer;
   margin-top:40px;
   color:#fff;
   font-weight:bold;
-  font-size:18px;
+  font-size:25px;
 }
 .container-password{
   max-width:480px;
@@ -61,8 +61,42 @@ body{
   margin-top:24px;
   margin-bottom:8px;
 }
+
 .password{
   height:60px;
   background-color:rgba(0,0,0,0.40);
   border-radius:4px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 4px;
+  /* display: none; */
+  transition: tranform 0.5s;
+}
+
+.password:hover{
+  transform: scale(1.05);
+}
+.clic{
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(15, 15, 15);
+  padding: 6px 8px ;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.hide{
+  display: none;
+}
+
+.container-password:hover .clic{
+  visibility: visible;
+  bottom: 50px ;
+  opacity: 1;
+
 }
